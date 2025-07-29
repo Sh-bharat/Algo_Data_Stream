@@ -34,7 +34,7 @@ class AliceBlueDataScraper:
         print(f"POA Status     : {'Given' if profile.get('poaStatus')=='Y' else 'Not Given'}")
 
 
-    def get_and_store_historical_data(self, symbol: str, timeframe_provided: str, from_date: datetime, to_date: datetime,file_path: str, exchange: str = "NSE", indices_require: bool = False):        
+    def get_and_store_historical_OHLC_data(self, symbol: str, timeframe_provided: str, from_date: datetime, to_date: datetime,file_path: str, exchange: str = "NSE", indices_require: bool = False):        
         print(
                 f"Fetching historical data for symbol: '{symbol}'\n"
                 f"  Timeframe : {timeframe_provided}\n"
